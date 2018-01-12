@@ -1,0 +1,55 @@
+.profitable-sale {
+    padding: 61px 0 48px 0;
+    &__title {
+        display: block;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        font-family: OpenSansSemibold, sans-serif;
+        font-size: 30px;
+        &:after {
+            content: "";
+            width: 53%;
+            display: block;
+            margin: 14px auto 0 auto;
+            border-top: 1px solid #cad5d5;
+        }
+    }
+
+    &__content {
+        width: 82%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        figure {
+            text-align: center;
+            width: 240px;
+            margin: 0 0 20px 0;
+            img {
+                margin-bottom: 25px;
+            }
+            figcaption {
+                p {
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.4;
+                }
+                a {
+                    display: inline-block;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .profitable-sale {
+        padding-bottom: 20px;
+        &__title {
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+    }
+}
