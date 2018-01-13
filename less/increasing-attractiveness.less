@@ -1,5 +1,6 @@
-.profitable-sale {
+.increasing-attractiveness {
     padding: 61px 0 48px 0;
+    background-color: #f4fcff;
     &__title {
         display: block;
         margin: 0 auto 60px auto;
@@ -16,7 +17,7 @@
     }
 
     &__content {
-        width: 82%;
+        width: 95%;
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
@@ -43,12 +44,19 @@
     }
 }
 
-
 @media screen and (max-width: 380px) {
-    .profitable-sale {
+    .increasing-attractiveness {
         padding-bottom: 20px;
         &__title {
             margin-bottom: 30px;
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .increasing-attractiveness {
+        &__title {
             font-size: 25px;
         }
     }

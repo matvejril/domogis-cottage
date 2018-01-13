@@ -1,4 +1,11 @@
-.contact-us {
+.landing-nav {
+    &__trigger {
+        text-align: center;
+        color: #616161;
+        margin: 0 auto;
+        padding: 10px 10px 10px 10px;
+        display: none;
+    }
     &__list {
         display: flex;
         justify-content: flex-start;
@@ -26,14 +33,18 @@
             margin-left: 0;
         }
     }
-    &_active {
+    &__item_active {
         border-bottom: 5px solid #ec9c07;
     }
 }
 
 @media screen and (max-width: 1180px) {
-    .contact-us {
+    .landing-nav {
+        &__trigger {
+            display: block;
+        }
         &__list  {
+            display: none;
             flex-direction: column;
             align-items: center;
         }

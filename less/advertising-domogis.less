@@ -1,0 +1,158 @@
+.advertising-domogis {
+    padding: 61px 0 50px 0;
+    &__title {
+        display: block;
+        margin: 0 auto 60px auto;
+        text-align: center;
+        font-family: "OpenSansItalic", sans-serif;
+        font-size: 25px;
+        &:after {
+            content: "";
+            width: 53%;
+            display: block;
+            margin: 19px auto 0 auto;
+            border-top: 1px solid #cad5d5;
+        }
+    }
+    &__content {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //width: 90%;
+    }
+    &__slider {
+        width: calc(~'40%');
+    }
+
+    &__text {
+        width: calc(~'55%');
+    }
+    &__origin {
+        margin: 0 0 10px 0;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+        li {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            width: calc(~'100% - 200px');
+            margin: 0;
+            display: inline-block;
+            font-family: OpenSansItalic, sans-serif;
+        }
+        span {
+            min-width: 150px;
+            margin-right: 15px;
+            font-family: OpenSansSemibold, sans-serif;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    &__profit {
+        margin: 0 0 10px 0;
+    }
+    &__other {
+        font-family: OpenSansItalic, sans-serif;
+        margin: 0;
+    }
+}
+
+.advertising-slider {
+    //border: 1px solid black;
+    width: 100%;
+    div {
+        outline: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.slick-prev {
+    left: -1px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 10px;
+    z-index: 1;
+}
+
+.slick-prev:before {
+    font-family: 'FontAwesome', sans-serif;
+    content: '\f053';
+    left: 90px;
+    background: #F2F0F1;
+    color: #5E5A56;
+    padding: 5px;
+    font-size: 30px;
+}
+.slick-next:before {
+    font-family: 'FontAwesome', sans-serif;
+    content: '\f054';
+    right: 90px;
+    background: #F2F0F1;
+    color: #5E5A56;
+    padding: 5px;
+    font-size: 30px;
+
+}
+
+
+@media screen and (max-width: 1180px) {
+    .advertising-domogis {
+        &__slider {
+            width: 39%;
+        }
+        &__video-player {
+            width: 100%;
+            min-width: 315px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advertising-domogis {
+        padding-bottom: 50px;
+        &__title {
+            margin-bottom: 30px;
+            font-size: 25px;
+        }
+        &__content {
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        &__slider {
+            width: 80%;
+            margin: 0 auto 15px auto;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .advertising-domogis {
+        &__slider {
+            width: 100%;
+            margin: 0 auto 15px auto;
+        }
+        &__list {
+            span {
+                min-width: 0;
+                white-space: normal;
+                width: 40%;
+            }
+            p {
+                width: 50%;
+            }
+        }
+    }
+}

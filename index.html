@@ -11,9 +11,12 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link href="css/index.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.js"></script>
+
 </head>
 
 <body class="wrap">
@@ -242,25 +245,26 @@
     </div>
 </header>
 
-<div class="contact-us">
+<div class="landing-nav">
     <div class="container">
-        <ul class="contact-us__list">
-            <li class="contact-us__item contact-us_active">
+        <a class="landing-nav__trigger" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        <ul class="landing-nav__list">
+            <li class="landing-nav__item landing-nav__item_active">
                 <a href="/o-servise/prodat-personalnuyu-nedvizhimost">Продать<br>персональную<br>недвижимость</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/prodat-kommercheskuyu-nedvizhimost">Продать<br>коммерческую<br>недвижимость</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/">Для девелоперов<br>коттеджных<br>поселков</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/kontakt">Как пользоваться<br>картой<br>инструменты сервиса</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/ot-avtora">От автора<br>сервиса</a>
             </li>
-            <li class="contact-us__item">
+            <li class="landing-nav__item">
                 <a href="/o-servise/kontakt">Контакты</a>
             </li>
         </ul>
@@ -275,19 +279,19 @@
 </div>
 
 <div class="sections">
-    <div class="we-need">
+    <div class="our-benefit">
         <div class="container">
-            <h2 class="we-need__title">Зачем нужен сервис DomoGis.ru?</h2>
-            <div class="we-need__content">
+            <h2 class="our-benefit__title">Зачем нужен сервис DomoGis.ru?</h2>
+            <div class="our-benefit__content">
                 <figure>
-                    <img src="images/profitable-sale/good-photo.png" alt="photo">
+                    <img src="images/our-benefit/good-photo.png" alt="photo">
                     <figcaption>
                         <p>Помогаем найти покупателей для
                             Девелоперов коттеджных поселков</p>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/profitable-sale/detailed-description.png" alt="description">
+                    <img src="images/our-benefit/detailed-description.png" alt="description">
                     <figcaption>
                         <p>
                             Делаем поиск недвижимости для
@@ -299,34 +303,36 @@
             </div>
         </div>
     </div>
-    <div class="save-advertising">
+    <div class="cut-costs">
         <div class="container">
-            <h2 class="save-advertising__title">Сервис DomoGis.ru - продажа без каких-либо комиссионных</h2>
-            <div class="save-advertising__content">
-                <div class="save-advertising__video">
-                    <iframe class="our-advantages__video-player" width="405" height="227" src="https://www.youtube.com/embed/5gjGsErp3-0"
+            <h2 class="cut-costs__title">Сервис DomoGis.ru - продажа без каких-либо комиссионных</h2>
+            <div class="cut-costs__content">
+                <div class="cut-costs__video">
+                    <iframe class="cut-costs__video-player" width="405" height="227" src="https://www.youtube.com/embed/5gjGsErp3-0"
                             frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
                     </iframe>
-                    <p class="save-advertising__arrow">Видео как &#171;продать недвижимость&#187;</p>
+                    <p class="cut-costs__arrow">Видео как &#171;продать недвижимость&#187;</p>
                 </div>
-                <div class="save-advertising__text">
-                    <ul class="save-advertising__list">
-                        <li class="advantage_cottage">
+                <div class="cut-costs__text">
+                    <ul class="cut-costs__list">
+                        <li class="cut-costs-item">
                             <h5>Снижение затрат на рекламу</h5>
                             <p>(интернет, печатные СМИ, наружная реклама, радио и т.д.)</p>
                         </li>
-                        <li class="advantage_cottage">
+                        <li class="cut-costs-item">
                             <h5>Снижение затрат на коммерческий отдел</h5>
                             <p>(меньше времени на пустые показы, объяснения, выезды и т.д.)</p>
                         </li>
-                        <li class="advantage_cottage">
+                        <li class="cut-costs-item">
                             <h5>Исключение затрат на комиссионны</h5>
                             <p>(прямые продажи)</p>
                         </li>
                     </ul>
                     <div>
-                        <p class="save-advertising__symbol">Увеличение прибыли</p><br>
-                        <a class="save-advertising__btn" href="#">Зарегистрироваться</a>
+                        <p class="cut-costs__symbol">Увеличение прибыли</p><br>
+                        <a href="#" class="button_orange js-main-login">
+                            <span class="button__text">Зарегистрироваться</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -338,7 +344,6 @@
             </div>
         </div>
     </div>
-
     <div class="our-differences">
         <div class="container">
             <h2 class="our-differences__title">В чем отличия от других сайтов</h2>
@@ -379,130 +384,143 @@
         </div>
     </div>
 
-    <div class="steps-sale">
+    <div class="steps-placement">
         <div class="container">
-            <h2 class="steps-sale__title">Как продать Дом, Дачу или Участок?</h2>
-            <div class="steps-sale__content">
-                <img class="steps-sale__kernel" src="images/steps-sale/kernel.png" alt="kernel">
-
-                <ul class="steps-sale__list">
-                    <li class="steps-sale-item steps-sale-item_add">
-                        <h5>Подать бесплатно объявление о продаже <br>
-                            на DomoGis.ru
-                        </h5>
-                        <a href="/login" class="button_orange js-main-login">
-                            <span class="button__text">Подать объявление</span>
+            <h2 class="steps-placement__title">Как разместить информацию о поселке<br> и объявить об объектах в продаже</h2>
+            <div class="steps-placement__content">
+                <img class="steps-placement__kernel" src="images/steps-placement/kernel.png" alt="kernel">
+                <ul class="steps-placement__list">
+                    <li class="steps-placement-item steps-placement-item_register">
+                        <h5>Зарегистрироваться за несколько минут</h5>
+                        <a href="#" class="button_orange js-main-login">
+                            <span class="button__text">Зарегистрироваться</span>
                         </a>
                     </li>
-                    <li class="steps-sale-item steps-sale-item_wait">
-                        <h5>Дождаться звонков покупателей</h5>
-                        <img src="images/steps-sale/wait.png" alt="wait">
-                    </li>
-                    <li class="steps-sale-item steps-sale-item_deal">
-                        <h5>Провести сделку</h5>
+                    <li class="steps-placement-item steps-placement-item_information">
+                        <h5>Ввести первичную информацию</h5>
                         <ul>
-                            <li>Вариант 1: Самостоятельно подготовить документы</li>
-                            <li>Вариант 2: Воспользоваться <a href="#">услугами по сопровождению</a></li>
+                            <li>
+                                <p>
+                                    <span>Вариант 1: </span>Самостоятельно (займет минимум времени): Ваш поселок и объявления сразу
+                                    появляются на карте
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>Вариант 2: </span>Через тех. поддержку сервиса (на встрече или по телефону рассказываете
+                                    информацию о поселке): Ваш поселок и объявления появятся на карте в течении 5 рабочих дней<br>
+                                </p>
+                                <a href="#">
+                                    <span class="button_green button__text">Заказать обратный звонок</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="steps-sale-item steps-sale-item_calculation">
-                        <h5>Зарегистрировать сделку и получить оплату</h5>
+                    <li class="steps-placement-item steps-placement-item_personal-area">
+                        <h5>Дальнейшее управление и обновление информации через личный кабинет</h5>
+                        <p>(изменении условий продажи, добавление новостей и акций и т.д.)</p>
                     </li>
                 </ul>
             </div>
-
-
-        </div>
-    </div>
-    <div class="our-advantages">
-        <div class="container">
-            <h2 class="our-advantages__title">Сервис DomoGis.ru - продажа без каких-либо комиссионных</h2>
-            <div class="our-advantages__content">
-                <div class="our-advantages__video">
-                    <iframe class="our-advantages__video-player" width="405" height="227" src="https://www.youtube.com/embed/5gjGsErp3-0"
-                            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
-                    </iframe>
-                    <p class="our-advantages__arrow">Видео как &#171;продать недвижимость&#187;</p>
-                </div>
-                <div class="our-advantages__text">
-                    <h4 class="our-advantages__subtitle">А также много других преимуществ:</h4>
-                    <ul class="our-advantages__list">
-                        <li class="advantage advantage_second-ad">
-                            <h5>Ваше объявление всегда<br>
-                                на главной странице
-                            </h5>
-                            <p>Объявление не затеряется в списках, оно всегда на виду - на карте!</p>
-                        </li>
-                        <li class="advantage advantage_fast-add">
-                            <h5>Подать объявление быстро<br>
-                                и просто
-                            </h5>
-                            <p>Минимум действий, понятный интерфейс, удобный доступ с любого
-                            устройства, есть видеоподсказки, тех. поддержка</p>
-                        </li>
-                        <li class="advantage advantage_non-conflicts">
-                            <h5>Отсутствие конфликта интересов</h5>
-                            <p>Вы общаетесь и договариваетесь с покупателем напрямую, и сами решаете,
-                                на каких условиях готовы продать</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="our-advantages__quote">
-                <p class="our-advantages__quote-open"></p>
-                <p class="our-advantages__quote-text">Сэкономленные деньги - все равно, что заработанные</p>
-                <p class="our-advantages__quote-author">Народная мудрость</p>
-                <p class="our-advantages__quote-close"></p>
+            <div class="quote">
+                <p class="quote__open"></p>
+                <p class="quote__text">Интересный факт: обрисовка границ участка происходит в автоматическом режиме -
+                    надо ввести только кадастровый номер</p>
+                <p class="quote__close"></p>
             </div>
         </div>
     </div>
-    <div class="profitable-sale">
+    <div class="increasing-attractiveness">
         <div class="container">
-            <h2 class="profitable-sale__title">Как дороже и быстрее пордать свою недвижимость?</h2>
-            <div class="profitable-sale__content">
+            <h2 class="increasing-attractiveness__title">Как повысить привлекательность своей недвижимости</h2>
+            <div class="increasing-attractiveness__content">
                 <figure>
-                    <img src="images/profitable-sale/good-photo.png" alt="photo">
+                    <img src="images/increasing-attractiveness/good-photo.png" alt="photo">
                     <figcaption>
                         <p>Сделать хорошие фото</p>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/profitable-sale/detailed-description.png" alt="description">
+                    <img src="images/increasing-attractiveness/detailed-description.png" alt="description">
                     <figcaption>
                         <p>Сделать подробное описание</p>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="images/profitable-sale/make-geodesy.png" alt="surveying">
+                    <img src="images/increasing-attractiveness/detailed-description.png" alt="surveying">
                     <figcaption>
-                        <p>Если не сделано межевание<br>участка - определить границу </p>
-                        <a href="/articles/pochemu-vazhno-stavit-zemelnyy-uchastok-na-kadastrovyy-uchetutochnyat-granitsy-zemelnogo-uchastka">
-                            (читать статью)
-                        </a>
+                        <p>Периодически делать видеосюжеты</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/increasing-attractiveness/detailed-description.png" alt="surveying">
+                    <figcaption>
+                        <p>Периодически делать видеосюжеты</p>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </div>
+
+    <div class="accommodation-village">
+        <div class="container">
+            <h2 class="accommodation-village__title">
+                Условия размещения коттеджного поселка.
+                В чем отличия между бесплатным и платным функционалом
+            </h2>
+            <div class="accommodation-village__content">
+                <figure class="accommodation-village__item accommodation-village__item_information">
+                    <img src="images/our-benefit/good-photo.png" alt="notebook icon">
+                    <figcaption>
+                        <p>
+                            Обязательным условием при использовании сервиса DomoGis.ru является
+                            соответствие размещаемой информации (цен на недвижимость, распродаж,
+                            кол-ва объектов в продаже и т.д.) с Вашим официальным сайтом.</p>
+                    </figcaption>
+                </figure>
+                <figure class="accommodation-village__item accommodation-village__item_differences">
+                    <figcaption>
+                        <p>
+                            Различия между бесплатным и платным функционалом,
+                            а также стоимость платного функционала смотрите <a href="#">здесь.</a>
+                        </p>
+                    </figcaption>
+                    <img src="images/our-benefit/good-photo.png" alt="sheet-icon">
+                </figure>
+            </div>
+        </div>
+    </div>
     <div class="quick-questions">
+
         <h2 class="quick-questions__title">И несколько Важных часто задаваемых вопросов:</h2>
         <div class="estate-objects">
             <div class="container">
                 <h3 class="estate-objects__title">Какие объекты можно разместить в разделе персональная недвижимость на сайте DomoGis.ru?</h3>
                 <div class="estate-objects__content">
                     <div class="estate-objects__allowed">
-                        <h5>Можно</h5>
-                        <ul class="estate-objects__allowed-list">
-                            <li class="estate-object estate-object_station">Участок</li>
-                            <li class="estate-object estate-object_country-house">Дача</li>
-                            <li class="estate-object estate-object_townhouse">Таунхаус</li>
-                            <li class="estate-object estate-object_house">Дом / коттедж</li>
-                            <li class="estate-object estate-object_part-house">Часть дома</li>
-                            <li class="estate-object estate-object_garage">Гараж</li>
-                        </ul>
+                        <h4>Можно</h4>
+                        <div class="estate-objects__allowed-container">
+                            <div>
+                                <h5 class="estate-objects__allowed-subtitle">Коттеджные послеки и общества;</h5>
+                                <ul class="estate-objects__allowed-list">
+                                    <li class="estate-object">любой формы (ДНТ, СНТ и ИЖС)</li>
+                                    <li class="estate-object">любых размеров</li>
+                                    <li class="estate-object">на любой стадии развития</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="estate-objects__allowed-subtitle">Объекты недвижимости поселка;</h5>
+                                <ul class="estate-objects__allowed-list">
+                                    <li class="estate-object">Усасток</li>
+                                    <li class="estate-object">Дом/коттедж; Дача</li>
+                                    <li class="estate-object">Часть дома; Таунхаус</li>
+                                    <li class="estate-object">Коммерческая недвижимость</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="estate-objects__forbidden">
-                        <h5>Нельзя</h5>
+                        <h4>Нельзя</h4>
                         <ul class="estate-objects__forbidden-list">
                             <li class="estate-object estate-object_apartment">Квартиры</li>
                             <li class="estate-object estate-object_office">Офисы</li>
@@ -577,6 +595,46 @@
                 <p class="interesting-site__arrow">Видео как &#171;ищут недвижимость&#187;</p>
             </div>
         </div>
+        <div class="advertising-domogis">
+            <div class="container">
+                <h2 class="advertising-domogis__title">Как мы рекламируем сервис DomoGis.ru?</h2>
+                <div class="advertising-domogis__content">
+                    <div class="advertising-domogis__slider">
+                        <div class="advertising-slider">
+                            <div><img src="images/quick-questions/slide1.png" alt="slider item"></div>
+                            <div><img src="images/quick-questions/slide1.png" alt="slider item"></div>
+                            <div><img src="images/quick-questions/slide1.png" alt="slider item"></div>
+                            <div><img src="images/quick-questions/slide1.png" alt="slider item"></div>
+                        </div>
+                    </div>
+                    <div class="advertising-domogis__text">
+                        <p class="advertising-domogis__origin">С ноября 2017 по апрель 2018 - основная рекламная кампания
+                            в Новосибирской области идет:
+                        </p>
+                        <ul class="advertising-domogis__list">
+                            <li>
+                                <span>на радио</span>
+                                <p>
+                                    не менее 750 прокатов каждый месяц<br>
+                                    на разных радиостанциях
+                                </p>
+                            </li>
+                            <li>
+                                <span>в наружной рекламе</span>
+                                <p>не менее 30 плакатов каждый месяц<br>
+                                на въездах-выездах Новосибирска
+                                </p>
+                            </li>
+                        </ul>
+                        <p class="advertising-domogis__profit">Данная реклама даёт значительное кол-во прямых заходов на сервис DomoGis.ru</p>
+                        <p class="advertising-domogis__other">
+                            При этом используются и другие виды рекламы, но в меньшем объеме.
+                            Продвижение в поисковых системах также идет своим чередом
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="get-started">
             <div class="container">
                 <h2 class="get-started__title">Как зарегистроваться и подать объявления?</h2>
@@ -590,12 +648,12 @@
                         <h4 class="get-started__subtitle">
                             Пора продать свою недвижимость!
                         </h4>
-                        <a href="/login" class="button_orange js-main-login">
-                            <span class="button__text">Подать объявление</span>
+                        <a href="/login" class="button_orange button_double-line  js-main-login">
+                            <span class="button__text">Разместить информацию о поселке<br> и объектах в продаже</span>
                         </a>
                         <ul class="get-started__info-list">
-                            <li class="get-started__info-item get-started__info-item_time">Займет около 10 минут</li>
-                            <li class="get-started__info-item get-started__info-item_money">Подача объявления<br>бесплатно</li>
+                            <li class="get-started__info-item get-started__info-item_time">Займет около 30 минут</li>
+                            <li class="get-started__info-item get-started__info-item_money">Широкий базовый функционал достуиен бесплатно на поястоянной основе</li>
                         </ul>
                     </div>
                 </div>
@@ -603,7 +661,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $('.advertising-slider').slick();
+    </script>
+
 </div>
+
 <footer class="footer">
     <div class="footer__container container">
         <div class="footer__left_column">
@@ -654,5 +718,17 @@
         </div>
     </div>
 </footer>
+
+<script>
+    $('.landing-nav__trigger').click(function() {
+    $('.landing-nav__list').slideToggle(500);
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 1160) {
+            $('.landing-nav__list').removeAttr('style');
+        }
+    });
+</script>
 </body>
 </html>

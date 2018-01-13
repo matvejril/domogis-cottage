@@ -1,11 +1,19 @@
 .our-differences {
   padding: 60px 0 60px 0;
+  background-color: #f4fcff;
   &__title {
     display: block;
     margin: 0 auto 60px auto;
     text-align: center;
     font-family: OpenSansSemibold, sans-serif;
     font-size: 30px;
+    &:after {
+      content: "";
+      width: 53%;
+      display: block;
+      margin: 19px auto 0 auto;
+      border-top: 1px solid #cad5d5;
+    }
   }
   &__list {
     display: flex;
@@ -13,15 +21,27 @@
     flex-wrap: wrap;
   }
   &__item {
-    width: calc(~'100%/3 - 30px');
+    width: 300px;
     padding-left: 60px;
     background: url(..) no-repeat left top;
     margin-bottom: 25px;
     h5 {
-      margin: 0 0 15px 0;
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
     }
     p {
       margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-differences {
+    &__title {
+      font-size: 25px;
     }
   }
 }

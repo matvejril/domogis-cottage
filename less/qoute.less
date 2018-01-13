@@ -27,7 +27,7 @@
       position: relative;
       right: 102%;
       bottom: 8px;
-      content: url(../images/save-advantages/qoute.png);
+      content: url(../images/qoute.png);
       display: inline-block;
     }
   }
@@ -42,8 +42,28 @@
       position: relative;
       left: 35px;
       bottom: 8px;
-      content: url(../images/save-advantages/qoute.png);
+      content: url(../images/qoute.png);
       display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quote {
+    &__text {
+      margin: 0 0 16px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .quote {
+    &__text {
+      font-size: 17px;
+    }
+    &__author {
+      font-size: 13px;
     }
   }
 }

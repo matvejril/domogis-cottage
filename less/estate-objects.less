@@ -2,10 +2,6 @@
     background-color: #f4fcff;
     padding-top: 60px;
     padding-bottom: 75px;
-    h5 {
-        margin: 0 0 20px 0;
-        font-size: 20px;
-    }
     &__title {
         margin: 0 0 45px 0;
         text-align: center;
@@ -19,13 +15,16 @@
             border-top: 1px solid #cad5d5;
         }
     }
+    h4 {
+        margin: 0 0 20px 0;
+        font-size: 20px;
+    }
     &__content {
-        width: 67%;
+        width: 85%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        align-items: center;
     }
     &__allowed {
         width: 75%;
@@ -34,14 +33,36 @@
         background-color: #ebfff4;
         box-sizing: border-box;
     }
+    &__allowed-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            width: 50%;
+            min-width: 303px;
+
+        }
+    }
     &__forbidden {
         width: 25%;
         padding: 28px 0 28px 34px;
         margin: 0;
         background-color: #ffefea;
         box-sizing: border-box;
+        li {
+            padding: 12px 0 12px 60px;
+            &:first-child {
+                margin-bottom: 12px;
+            }
+        }
     }
-
+    &__allowed-subtitle {
+        display: inline-block;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 17px;
+        margin: 0 0 5px 0;
+    }
     &__allowed-list {
         display: flex;
         justify-content: space-between;
@@ -61,42 +82,20 @@
 }
 
 .estate-object {
-    padding: 15px 0 15px 65px;
-    margin-bottom: 7px;
-    width: 33%;
-    min-width: 140px;
-    flex-wrap: wrap;
+    padding: 10px 0 10px 50px;
+    margin-bottom: 2px;
+    width: 100%;
+    min-width: 303px;
     font-size: 16px;
-    box-sizing: border-box;
-    white-space: nowrap;
-    &_station {
-        background: url(../images/quick-questions/station.png) no-repeat left center;
-    }
-    &_country-house {
-        background: url(../images/quick-questions/country-house.png) no-repeat left center;
-    }
-    &_townhouse {
-        background: url(../images/quick-questions/townhouse.png) no-repeat left center;
-    }
-    &_house {
-        background: url(../images/quick-questions/house.png) no-repeat left center;
-        margin-bottom: 0;
-    }
-    &_part-house {
-        background: url(../images/quick-questions/part-house.png) no-repeat left center;
-        margin-bottom: 0;
-    }
-    &_garage {
-        background: url(../images/quick-questions/garage.png) no-repeat left center;
-        margin-bottom: 0;
-    }
+    background: url(../images/quick-questions/allowed.jpg) no-repeat left center;
+
     &_apartment {
-        width: 172px;
+        min-width: 0;
         background: url(../images/quick-questions/apartment-icon.png) no-repeat left center;
         padding-left: 60px;
     }
     &_office {
-        width: 172px;
+        min-width: 0;
         background: url(../images/quick-questions/portfolio-icon.png) no-repeat left center;
         margin-bottom: 0;
         padding-left: 60px;
@@ -122,6 +121,9 @@
         &__allowed {
             width: 100%;
             padding: 10px;
+            div {
+                margin: 0 auto;
+            }
         }
         &__forbidden{
             width: 100%;
